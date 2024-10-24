@@ -7,9 +7,10 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-image: url(banner.png);
+    background-size: cover;
     color: white;
-    padding: 20px;
+    padding: 60px;
     text-align: center;
 }
 
