@@ -1,37 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+   <!-- Home Page -->
+   <url>
+      <loc>https://stealthtrooper36.github.io/buildisland/</loc>
+      <lastmod>2024-10-25</lastmod> <!-- Date of last modification -->
+      <changefreq>weekly</changefreq> <!-- How often this page changes -->
+      <priority>1.0</priority> <!-- Priority of this page (1.0 is highest) -->
+   </url>
 
+   <!-- About Page -->
+   <url>
+      <loc>https://stealthtrooper36.github.io/buildisland/about</loc>
+      <lastmod>2024-10-25</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+   </url>
 
-<url>
-  <loc>https://stealthtrooper36.github.io/buildisland/</loc>
-  <lastmod>2024-10-25T21:54:38+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://stealthtrooper36.github.io/buildisland/news.html</loc>
-  <lastmod>2024-10-25T21:54:38+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://stealthtrooper36.github.io/buildisland/articles/oct24/cometdummy-leaves-build-island.html</loc>
-  <lastmod>2024-10-25T21:54:38+00:00</lastmod>
-  <priority>0.90</priority>
-</url>
-<url>
-  <loc>https://stealthtrooper36.github.io/buildisland/index.html</loc>
-  <lastmod>2024-10-25T21:54:38+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://stealthtrooper36.github.io/buildisland/about</loc>
-  <lastmod>2024-10-25T21:54:38+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
+   <!-- Article: CometDummy Leaves Build Island -->
+   <url>
+      <loc>https://stealthtrooper36.github.io/buildisland/articles/oct24/cometdummy-leaves-build-island.html</loc>
+      <lastmod>2024-10-24</lastmod>
+      <changefreq>yearly</changefreq>
+      <priority>0.9</priority>
+   </url>
 
+   <!-- Index Page -->
+   <url>
+      <loc>https://stealthtrooper36.github.io/buildisland/index.html</loc>
+      <lastmod>2024-10-25</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>1.0</priority>
+   </url>
 
+   <!-- Updates Page -->
+   <url>
+      <loc>https://stealthtrooper36.github.io/buildisland/updates</loc>
+      <lastmod>2024-10-25</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+   </url>
 </urlset>
