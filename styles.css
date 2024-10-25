@@ -1,3 +1,50 @@
+/* Header Styling */
+header {
+    background-image: url(banner.png);
+    background-size: cover;
+    color: white;
+    padding: 60px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 0;
+}
+
+/* Inner Header Content */
+.header-content {
+    padding-bottom: 30px; /* Adjust space below the header content */
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex; /* Horizontal row */
+    justify-content: center; /* Center buttons horizontally */
+    background-color: #333; /* Navbar background */
+    padding: 15px 0; /* Padding around the buttons */
+    margin-top: 0; /* No space at top so it's right under banner */
+}
+
+.navbar .nav-button {
+    background-color: #4a90e2; /* Button background */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Size of buttons */
+    margin: 0 10px; /* Spacing between buttons */
+    text-decoration: none; /* Remove underline */
+    font-size: 1.2rem; /* Button font size */
+    border-radius: 5px; /* Rounded button edges */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+    border: none; /* Remove default button border */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.navbar .nav-button:hover {
+    background-color: #357abd; /* Darker color on hover */
+}
+
+/* Ensure navbar is positioned under the header */
+header + .navbar {
+    margin-top: 0;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
@@ -5,14 +52,6 @@ body {
     overflow-x: hidden;
     padding: 0;
     color: #333;
-}
-
-header {
-    background-image: url(banner.png);
-    background-size: cover;
-    color: white;
-    padding: 60px;
-    text-align: center;
 }
 
 main {
