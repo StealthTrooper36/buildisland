@@ -17,6 +17,9 @@ header {
 main {
     padding: 20px;
 }
+paragraph {
+    font-size: large;
+}
 
 section {
     background-color: white;
