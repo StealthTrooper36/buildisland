@@ -5,18 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Updates List - Build Island News</title>
     <link rel="stylesheet" href="styles.css">
+    <script>
+        fetch('https://stealthtrooper36.github.io/buildisland/navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading navbar:', error));
+    </script>    
 </head>
 <body>
-    <header>
-        <h1>Roblox Build Island News</h1>
-    </header>
-</nav>
-<nav class="navbar">
-<button class="nav-button";  onclick="location.href='https://stealthtrooper36.github.io/buildisland/index.html'";>Home</button>
-<button class="nav-button"; onclick="location.href='https://stealthtrooper36.github.io/buildisland/about'";>About</button>
-<button class="nav-button"; onclick="location.href='https://github.com/StealthTrooper36/buildisland'">Source Code</button>
-<button class="nav-button"; onclick="location.href='https://stealthtrooper36.github.io/buildisland/index.html'";>Discord</button>
- </nav>
+<div id="navbar"></div>
 
     <main>
         <section>
