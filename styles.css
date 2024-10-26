@@ -1,50 +1,4 @@
-/* Header Styling */
-header {
-    background-image: url(banner.png);
-    background-size: cover;
-    color: white;
-    padding: 60px;
-    text-align: center;
-    position: relative;
-    margin-bottom: 0;
-}
-
-/* Inner Header Content */
-.header-content {
-    padding-bottom: 30px; /* Adjust space below the header content */
-}
-
-/* Navbar Styling */
-.navbar {
-    display: flex; /* Horizontal row */
-    justify-content: center; /* Center buttons horizontally */
-    background-color: #333; /* Navbar background */
-    padding: 15px 0; /* Padding around the buttons */
-    margin-top: 0; /* No space at top so it's right under banner */
-}
-
-.navbar .nav-button {
-    background-color: #4a90e2; /* Button background */
-    color: white; /* Text color */
-    padding: 10px 20px; /* Size of buttons */
-    margin: 0 10px; /* Spacing between buttons */
-    text-decoration: none; /* Remove underline */
-    font-size: 1.2rem; /* Button font size */
-    border-radius: 5px; /* Rounded button edges */
-    transition: background-color 0.3s ease; /* Smooth hover effect */
-    border: none; /* Remove default button border */
-    cursor: pointer; /* Change cursor to pointer on hover */
-}
-
-.navbar .nav-button:hover {
-    background-color: #357abd; /* Darker color on hover */
-}
-
-/* Ensure navbar is positioned under the header */
-header + .navbar {
-    margin-top: 0;
-}
-
+/* General Styling */
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
@@ -79,6 +33,49 @@ footer {
     width: 100%;
 }
 
+/* Header Styling */
+header {
+    background-image: url(banner.png);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 60px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 0;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 15px 0;
+    margin-top: 0;
+}
+
+.navbar .nav-button {
+    background-color: #4a90e2;
+    color: white;
+    padding: 10px 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar .nav-button:hover {
+    background-color: #357abd;
+}
+
+header + .navbar {
+    margin-top: 0;
+}
+
+/* Blockquote Styling */
 blockquote {
     font-family: 'Georgia', serif;
     font-size: 1.1rem;
@@ -117,4 +114,61 @@ blockquote::after {
     color: #666;
     font-style: italic;
     position: static;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    header {
+        padding: 30px;
+        font-size: 1.5rem;
+    }
+
+    .navbar {
+        flex-direction: column; /* Stack navbar buttons vertically */
+        align-items: center;
+        padding: 10px;
+    }
+
+    .navbar .nav-button {
+        margin: 5px 0; /* Reduce space between buttons */
+        width: 90%; /* Stretch buttons to near full-width on mobile */
+        font-size: 1rem; /* Reduce font size for mobile */
+    }
+
+    blockquote {
+        padding: 15px 20px;
+        font-size: 1rem;
+    }
+
+    blockquote::before, blockquote::after {
+        font-size: 2rem;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    section {
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 20px;
+    }
+
+    .navbar .nav-button {
+        font-size: 0.9rem; /* Further reduce font size for smaller screens */
+        padding: 8px 16px;
+    }
+
+    blockquote {
+        font-size: 0.9rem;
+    }
+
+    blockquote::before, blockquote::after {
+        font-size: 1.8rem;
+    }
 }
