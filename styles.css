@@ -38,7 +38,7 @@ header {
     background-image: url(banner.png);
     background-size: cover;
     background-position: center;
-    color: white;
+    color: rgba(0, 0, 0, 1);
     padding: 60px;
     text-align: center;
     position: relative;
