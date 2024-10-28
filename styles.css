@@ -116,7 +116,7 @@ blockquote::after {
     position: static;
 }
 
-
+/* Responsive Adjustments */
 @media (max-width: 768px) {
     header {
         padding: 30px;
@@ -124,15 +124,15 @@ blockquote::after {
     }
 
     .navbar {
-        flex-direction: column; 
+        flex-direction: column; /* Stack navbar buttons vertically */
         align-items: center;
         padding: 10px;
     }
 
     .navbar .nav-button {
-        margin: 5px 0; 
-        width: 90%; 
-        font-size: 1rem; 
+        margin: 5px 0; /* Reduce space between buttons */
+        width: 90%; /* Stretch buttons to near full-width on mobile */
+        font-size: 1rem; /* Reduce font size for mobile */
     }
 
     blockquote {
@@ -160,7 +160,7 @@ blockquote::after {
     }
 
     .navbar .nav-button {
-        font-size: 0.9rem; 
+        font-size: 0.9rem; /* Further reduce font size for smaller screens */
         padding: 8px 16px;
     }
 
@@ -172,35 +172,34 @@ blockquote::after {
         font-size: 1.8rem;
     }
 }
-
+/* Container for articles grid */
 .articles-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
     padding: 20px;
     max-width: 1000px;
     margin: 0 auto;
 }
 
+/* Styling each article box */
 .article-box {
-    background-color: #f9f9f9;
+    background-color: #fff;
     border: 1px solid #ddd;
     padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease;
-    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
 
 .article-box:hover {
-    transform: scale(1.03);
+    transform: translateY(-5px);
 }
 
 .article-box h2 a {
-    color: #333;
+    color: #4a90e2;
     text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: bold;
+    font-size: 1.1rem;
 }
 
 .article-box h2 a:hover {
@@ -210,10 +209,5 @@ blockquote::after {
 .article-box p {
     margin: 5px 0;
     font-size: 0.9rem;
-    color: #666;
-}
-
-.article-box p strong {
-    font-weight: bold;
-    color: #333;
+    color: #555;
 }
