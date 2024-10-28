@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Build Island News</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        fetch('https://stealthtrooper36.github.io/buildisland/navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading navbar:', error));
+    </script>
+    
+</head>
+<body>
+<div id="navbar"></div>
+
+<main>
+<article>
+    <article>
+    <h1>Error 404</h1>
+    <paragraph>
+    <p>The requested page could not be found.</p>
+    <p><a  href="index.html">Return to the homepage</a></p>
+    </paragraph>
+</article>
+</main>
+<footer>
+    <p>Build Island News</p>
+    <p>Operated by {E.S} Eunoia Studios</p>
+</footer>
