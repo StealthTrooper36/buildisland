@@ -1,6 +1,39 @@
+/* Load the Fredoka font with a single TTF file */
+@font-face {
+    font-family: 'Fredoka';
+    src: url('sourceicons/default.ttf') format('truetype');
+    font-weight: 300; /* Light */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fredoka';
+    src: url('sourceicons/default.ttf') format('truetype');
+    font-weight: 400; /* Regular */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fredoka';
+    src: url('sourceicons/default.ttf') format('truetype');
+    font-weight: 500; /* Medium */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fredoka';
+    src: url('sourceicons/default.ttf') format('truetype');
+    font-weight: 600; /* Semibold */
+    font-style: normal;
+}
+
 /* General Styling */
+* {
+    font-family: 'Fredoka', sans-serif !important; /* Default to Fredoka */
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Fredoka';
     background-color: #f0f0f0;
     margin: 0;
     overflow-x: hidden;
@@ -12,7 +45,7 @@ main {
     padding: 20px;
 }
 
-paragraph {
+p {
     font-size: large;
 }
 
@@ -45,6 +78,10 @@ header {
     margin-bottom: 0;
 }
 
+header h1 {
+    font-weight: 500; /* Medium for header */
+}
+
 /* Navbar Styling */
 .navbar {
     display: flex;
@@ -71,13 +108,9 @@ header {
     background-color: #357abd;
 }
 
-header + .navbar {
-    margin-top: 0;
-}
-
 /* Blockquote Styling */
 blockquote {
-    font-family: 'Georgia', serif;
+    font-family: 'Fredoka', serif;
     font-size: 1.1rem;
     color: #333;
     background: #f7f7f7;
@@ -113,7 +146,6 @@ blockquote::after {
     font-size: 0.9rem;
     color: #666;
     font-style: italic;
-    position: static;
 }
 
 /* Responsive Adjustments */
@@ -124,15 +156,15 @@ blockquote::after {
     }
 
     .navbar {
-        flex-direction: column; /* Stack navbar buttons vertically */
+        flex-direction: column;
         align-items: center;
         padding: 10px;
     }
 
     .navbar .nav-button {
-        margin: 5px 0; /* Reduce space between buttons */
-        width: 90%; /* Stretch buttons to near full-width on mobile */
-        font-size: 1rem; /* Reduce font size for mobile */
+        margin: 5px 0;
+        width: 90%;
+        font-size: 1rem;
     }
 
     blockquote {
@@ -160,7 +192,7 @@ blockquote::after {
     }
 
     .navbar .nav-button {
-        font-size: 0.9rem; /* Further reduce font size for smaller screens */
+        font-size: 0.9rem;
         padding: 8px 16px;
     }
 
@@ -172,6 +204,7 @@ blockquote::after {
         font-size: 1.8rem;
     }
 }
+
 /* Container for articles grid */
 .articles-grid {
     display: grid;
@@ -200,6 +233,7 @@ blockquote::after {
     color: #4a90e2;
     text-decoration: none;
     font-size: 1.1rem;
+    font-weight: 500; /* Medium for article titles */
 }
 
 .article-box h2 a:hover {
@@ -211,18 +245,19 @@ blockquote::after {
     font-size: 0.9rem;
     color: #555;
 }
- /* The alert message box */
- .alert {
+
+/* The alert message box */
+.alert {
     padding: 20px;
-    background-color: #f44336; /* Red */
+    background-color: #f44336;
     color: white;
     opacity: 1;
-    transition: opacity 0.6s; /* Fade effect */
-    display: block; /* Ensure it's displayed */
+    transition: opacity 0.6s;
+    display: block;
 }
-  
-  /* The close button */
-  .closebtn {
+
+/* The close button */
+.closebtn {
     margin-left: 15px;
     color: white;
     font-weight: bold;
@@ -231,9 +266,8 @@ blockquote::after {
     line-height: 20px;
     cursor: pointer;
     transition: 0.3s;
-  }
-  
-  /* When moving the mouse over the close button */
-  .closebtn:hover {
+}
+
+.closebtn:hover {
     color: black;
-  } 
+}
