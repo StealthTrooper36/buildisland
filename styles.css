@@ -141,7 +141,7 @@ blockquote::after {
 
 .blockquote-footer {
     display: inline-block;
-    text-align: right;
+    text-align: left;
     margin-top: 1rem;
     font-size: 0.9rem;
     color: #666;

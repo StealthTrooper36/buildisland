@@ -1,5 +1,7 @@
 https://stealthtrooper36.github.io/buildisland/
 https://stealthtrooper36.github.io/buildisland/about.html
-https://stealthtrooper36.github.io/buildisland/articles/oct24/cometdummy-leaves-build-island
 https://stealthtrooper36.github.io/buildisland/index.html
+https://stealthtrooper36.github.io/buildisland/discord
 https://stealthtrooper36.github.io/buildisland/updates
+https://stealthtrooper36.github.io/buildisland/all-articles
+
