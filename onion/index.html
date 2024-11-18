@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Build Island Onion</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stealthtrooper36.github.io/buildisland/styles.css">
+    <meta property="og:title" content="Build Island News">
+    <meta property="og:description" content="Roblox Build Island's unofficial news source!">
+    <meta property="og:url" content="https://stealthtrooper36.github.io/buildisland/index.html">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://stealthtrooper36.github.io/buildisland/sourceicons/favicon.png">
+    <meta name="theme-color" content="#4B006E">
+    <link rel="icon" type="image/x-vector" href="https://stealthtrooper36.github.io/buildisland/favicon.svg">
+    <meta property="og:site_name" content="Roblox Build Island News - Operated by IBINA">
+    <meta name="google-site-verification" content="96DsMvH7K7Z37HWwZLR-nNRnPbPuGYh90lgjhgrENLQ" />
+    <script>
+        fetch('https://stealthtrooper36.github.io/buildisland/navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading navbar:', error));
+    </script>    
+</head>
+<body>
+<div id="navbar"></div>
+
+    <main>
+
+        <section>
+            <h2>Breaking News</h2>
+            <p>Build Island Administrator murdered and corpse hidden.</p>
+            <p><em>Published on: Thursday, 14th November 2024</em></p>
+            <a href="articles/2024/November/tekker-harassment-group">View Article</a>
+        </section>
+
+
+        <section>
+            <h2>Latest News</h2>
+            <p>Build Island players harass ex-modkit developer, Tekker01 across all of Roblox.</p>
+            <p><em>Published on: Thursday, 14th November 2024</em></p>
+            <p><em>Source: <img src="sourceicons/eunoia.svg" alt="icon" style="width:20px; height:20px; vertical-align:middle;"> Eunoia Studios</em></p>
+            <a href="articles/2024/November/tekker-harassment-group">View Article</a>
+        </section>
+
+        <section>
+            <h2>More News</h2>
+            <p>A user has been doxxed and many innocent players may get banned as a result.</p>
+            <p><em>Published on: Tuesday, 29th October 2024</em></p>
+            <p><em>Source: <img src="sourceicons/eunoia.svg" alt="icon" style="width:20px; height:20px; vertical-align:middle;"> Eunoia Studios (StealthTrooper36) </em></p>
+            <a href="articles/oct24/USR-liberates-lovebirbland.html"> View Article</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>Build Island News</p>
+        <p>Operated by {E.S} Eunoia Studios</p>
+    </footer>
+</body>
+</html>
