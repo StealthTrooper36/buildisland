@@ -1,4 +1,5 @@
-/* Load the Fredoka font with a single TTF file */
+/* this is gonna be the dark mode version of the website, not gonna implement a mode swiching for now but will do so in the future. */
+/* font */
 @font-face {
     font-family: 'Fredoka';
     src: url('sourceicons/default.ttf') format('truetype');
@@ -27,18 +28,18 @@
     font-style: normal;
 }
 
-/* General Styling */
 * {
     font-family: 'Fredoka', sans-serif !important; /* Default to Fredoka */
 }
 
+/* general styling n shit lmao (slop code) */
 body {
     font-family: 'Fredoka';
-    background-color: #f0f0f0;
+    background-color: #121212;
     margin: 0;
     overflow-x: hidden;
     padding: 0;
-    color: #333;
+    color: #eae8e8; /* because im a moron and keep forgetting, this is text */
 }
 
 main {
@@ -82,39 +83,37 @@ header h1 {
     font-weight: 500; /* Medium for header */
 }
 
-/* Navbar Styling */
 .navbar {
     display: flex;
     justify-content: center;
-    background-color: #333;
-    padding: 15px 0;
-    margin-top: 0;
+    padding: 10px 0;
+    background-color: #000; /* Dark background */
 }
 
-.navbar .nav-button {
-    background-color: #4a90e2;
-    color: white;
-    padding: 10px 20px;
+.navbar .nav-link {
+    color: white; /* White text for links */
+    font-size: 1rem;
+    font-weight: 500; /* Medium font-weight */
+    text-decoration: none; /* Remove underline */
+    padding: 10px 15px;
     margin: 0 10px;
-    text-decoration: none;
-    font-size: 1.2rem;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    border: none;
-    cursor: pointer;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    position: relative;
 }
 
-.navbar .nav-button:hover {
-    background-color: #357abd;
+.navbar .nav-link:hover {
+    color: #4a90e2; /* Blue color on hover */
+    border-bottom: 2px solid #4a90e2; /* Blue underline on hover */
 }
+
 
 /* Blockquote Styling */
 blockquote {
     font-family: 'Fredoka', serif;
     font-size: 1.1rem;
-    color: #333;
-    background: #f7f7f7;
-    border-left: 5px solid #4a90e2;
+    color: #c4c3c3;
+    background: #1f1f20;
+    border-left: 5px solid #3b87dd;
     margin: 20px 0;
     padding: 20px 25px;
     line-height: 1.6;
@@ -124,7 +123,7 @@ blockquote {
 blockquote::before {
     content: open-quote;
     font-size: 2.5rem;
-    color: #4a90e2;
+    color: #3b87dd;
     position: absolute;
     left: 10px;
     top: -10px;
@@ -133,7 +132,7 @@ blockquote::before {
 blockquote::after {
     content: close-quote;
     font-size: 2.5rem;
-    color: #4a90e2;
+    color: #3b87dd;
     position: absolute;
     right: 10px;
     bottom: 0;
@@ -141,7 +140,7 @@ blockquote::after {
 
 .blockquote-footer {
     display: inline-block;
-    text-align: left;
+    text-align: right;
     margin-top: 1rem;
     font-size: 0.9rem;
     color: #666;
@@ -205,7 +204,7 @@ blockquote::after {
     }
 }
 
-/* Container for articles grid */
+/* the list articles page */
 .articles-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
