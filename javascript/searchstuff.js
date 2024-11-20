@@ -6,18 +6,22 @@ fetch('https://stealthtrooper36.github.io/buildisland/search.json')
     })
     .catch((error) => console.error('Error loading search index:', error));
 
-function toggleSearch() {
-    const searchBar = document.getElementById("search");
-    const searchResults = document.getElementById("search-results");
-
-    if (searchBar.style.display === "none" || searchBar.style.display === "") {
-        searchBar.style.display = "inline-block";
-        searchBar.focus();
-    } else {
-        searchBar.style.display = "none";
-        searchResults.style.display = "none";
+    function toggleSearch() {
+        const searchInput = document.getElementById("search");
+        const searchResults = document.getElementById("search-results");
+    
+        if (searchInput.style.display === "none") {
+            searchInput.style.display = "block";
+            searchResults.style.display = "block";
+        } else {
+            searchInput.style.display = "none";
+            searchResults.style.display = "none";
+        }
     }
-}
+    
+    // Ensure it's globally accessible
+    window.toggleSearch = toggleSearch;
+    
 
 function searchFunction() {
     const input = document.getElementById("search").value.toLowerCase();

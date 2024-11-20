@@ -19,6 +19,7 @@
     <meta property="og:article:section" content="Modkit">
     <meta property="og:article:tag" content="#BuildIsland">
     <meta property="og:article:publisher" content="{E.S.} Eunoia Studios">
+    <script src="https://stealthtrooper36.github.io/buildisland/javascript/searchstuff.js"></script>
     <script>
         fetch('https://stealthtrooper36.github.io/buildisland/navbar.html')
             .then(response => response.text())
@@ -26,7 +27,7 @@
                 document.getElementById('navbar').innerHTML = data;
             })
             .catch(error => console.error('Error loading navbar:', error));
-    </script>    
+    </script>     
 </head>
 <body>
 <div id="navbar"></div>

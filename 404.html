@@ -5,6 +5,7 @@
     <title>404 - Build Island News</title>
     <link rel="icon" type="image/x-vector" href="https://stealthtrooper36.github.io/buildisland/favicon.svg">
     <link rel="stylesheet" href="https://stealthtrooper36.github.io/buildisland/styles.css">
+    <script src="https://stealthtrooper36.github.io/buildisland/javascript/searchstuff.js"></script>
     <script>
         fetch('https://stealthtrooper36.github.io/buildisland/navbar.html')
             .then(response => response.text())
@@ -12,7 +13,7 @@
                 document.getElementById('navbar').innerHTML = data;
             })
             .catch(error => console.error('Error loading navbar:', error));
-    </script>
+    </script>   
     
 </head>
 <body>
