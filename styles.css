@@ -102,8 +102,8 @@ header h1 {
 }
 
 .navbar .nav-link:hover {
-    color: #4a90e2; /* Blue color on hover */
-    border-bottom: 2px solid #4a90e2; /* Blue underline on hover */
+    color: rebeccapurple; /* Blue color on hover */
+    border-bottom: 2px solid rebeccapurple; /* Blue underline on hover */
 }
 
 
@@ -271,41 +271,61 @@ blockquote::after {
     color: black;
 }
 /* search stuff ig */
-#search-results {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background: #000;
-    border: 1px solid #333;
+#search-container {
+    position: absolute; /* Absolute positioning relative to the navbar */
+    right: 10px; /* Aligns it to the right */
+    top: 21%; /* Centers vertically */
+    transform: translateY(-50%); /* Fixes vertical alignment */
+    display: flex;
+    align-items: center;
+}
+
+#search-toggle {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
     border-radius: 5px;
-    position: absolute;
-    z-index: 1000;
-    max-height: 200px;
-    overflow-y: auto;
+    font-size: 16px;
+}
+
+#search {
+    display: none; /* Initially hidden */
+    margin-left: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
     width: 200px;
-  }
-  
-  #search-results li {
+    transition: all 0.3s ease-in-out;
+}
+
+#search.show {
+    display: inline-block;
+}
+
+#search-results {
+    position: absolute;
+    top: 50px;
+    right: 20px; /* Aligns the results with the button */
+    background-color: #000;
+    color: #fff;
     padding: 10px;
-    border-bottom: 1px solid #333;
-  }
-  
-  #search-results li:last-child {
-    border-bottom: none;
-  }
-  
-  #search-results li a {
-    color: #4a90e2;
-    text-decoration: none;
-  }
-  
-  #search-results li a:hover {
-    text-decoration: underline;
-  }
-  
-  #search {
-    margin-left: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    max-width: 300px;
+}
+
+#search-results a {
+    display: block;
     padding: 5px 10px;
-    font-size: 1rem;
-  }
-  
+    text-decoration: none;
+    color: #4e90ff; 
+}
+
+#search-results a:hover {
+    background-color: #333;
+    color: #fff;
+}
