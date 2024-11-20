@@ -1,6 +1,4 @@
 let searchIndex = [];
-
-// Fetch the JSON file dynamically
 fetch('https://stealthtrooper36.github.io/buildisland/search.json')
     .then((response) => response.json())
     .then((data) => {
