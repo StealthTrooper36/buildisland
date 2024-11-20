@@ -270,3 +270,42 @@ blockquote::after {
 .closebtn:hover {
     color: black;
 }
+/* search stuff ig */
+#search-results {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background: #000;
+    border: 1px solid #333;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 1000;
+    max-height: 200px;
+    overflow-y: auto;
+    width: 200px;
+  }
+  
+  #search-results li {
+    padding: 10px;
+    border-bottom: 1px solid #333;
+  }
+  
+  #search-results li:last-child {
+    border-bottom: none;
+  }
+  
+  #search-results li a {
+    color: #4a90e2;
+    text-decoration: none;
+  }
+  
+  #search-results li a:hover {
+    text-decoration: underline;
+  }
+  
+  #search {
+    margin-left: 20px;
+    padding: 5px 10px;
+    font-size: 1rem;
+  }
+  
