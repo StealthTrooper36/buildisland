@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Articles - Build Island News</title>
+    <link rel="stylesheet" href="../styles.css">
+    <meta property="og:title" content="All Articles - Build Island News">
+    <meta property="og:description" content="Explore all articles published here.">
+    <meta property="og:image" content="https://stealthtrooper36.github.io/buildisland/banner.png">
+    <meta property="og:url" content="https://stealthtrooper36.github.io/buildisland/all-articles.html">
+    <link rel="icon" type="image/x-vector" href="https://stealthtrooper36.github.io/buildisland/favicon.svg">
+    <meta property="og:site_name" content="Roblox Build Island News - Operated by IBINA">
+    <meta property="og:type" content="article">
+    <meta name="theme-color" content="#4B006E">
+    <script src="https://stealthtrooper36.github.io/buildisland/javascript/searchstuff.js"></script>
+    <script>
+        fetch('https://stealthtrooper36.github.io/buildisland/navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading navbar:', error));
+    </script>   
+
+</head>
+<body>
+<div id="navbar"></div>
+<main>
+    <h1>All Articles</h1>
+    <p>Browse through all the news articles published on Build Island News.</p>
+    <section class="articles">
+        <div class="article-box">
+            <h2>The dictatorship responds by launching a mini invasion against the state attempting to brutally supress a peaceful revolution.</h2>
+                <p>Multiple Mythran armored brigades were seen being transported from the mainland to region, securing the borders and disallowing foreign travel.</p>
+                <blockquote>
+                    "We will not tolerate the sovereignty of Transylvara, as it is a rightful territory of Mythra and it's ideals. We deem this operation necessary for the unforeseen future, and to stabilize the region and prevent any more unneeded conflict."
+                <div class="blockquote-footer">- Mythran Dictator, Gilgaros</div>
+                </blockquote>
+                <p><strong>Source:</strong> <img src="../sourceicons/eunoia.svg" alt="icon" style="width:20px; height:20px; vertical-align:middle;"> {E.S.} Eunoia Studio</p>
+                </div>
+        <div class="article-box">
+            <h2>The transylvanian government declares independence from the United States of Mythra.</h2>
+                <p><a href="https://docs.google.com/document/d/102sFuiF0s39yztn2bZRa2RD6nyw-D-NGGeqbLyTqpYg/edit?tab=t.0">The transylvanian government sent a document to the United States of Mythra announcing they will be peacefully leaving the nation and offers to pay 67 robux in compensation.</a></p>
+                <p><strong>Source:</strong> <img src="../sourceicons/eunoia.svg" alt="icon" style="width:20px; height:20px; vertical-align:middle;"> {E.S.} Eunoia Studio</p>
+                </div>
+    </section>
+</main>
+
+<footer>
+    <p>Build Island News - Operated by Eunoia Studios</p>
+</footer>
+
+</body>
+</html>
