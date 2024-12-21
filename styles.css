@@ -330,5 +330,199 @@ blockquote::after {
     color: #fff;
 }
 .a  {
-    color: rebeccapurple
+    color: rgb(144, 71, 217)
+}
+/* General Reset and Box Sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling for Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+    color: #f2f2f2;
+    background-color: #2a2a2a; /* Darker base color */
+}
+
+thead th {
+    background-color: #2a2a2a; /* Darker header */
+    color: #fff;
+    padding: 10px;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #2a2a2a;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #2a2a2a; /* Make all non-header rows the same */
+}
+
+/* Fix for Middle Column Consistency */
+td, th {
+    padding: 12px;
+    border: 1px solid #444; /* Consistent dark borders */
+}
+
+/* Ensure middle column matches the rest */
+td:nth-child(2), th:nth-child(2) {
+    background-color: #2a2a2a; /* Same color as other columns */
+}
+
+/* Styling for Paragraphs */
+p {
+    margin: 15px 0; /* Add spacing between paragraphs */
+    line-height: 1.6;
+    color: #ddd;
+}
+
+/* Styling for Responsive Images */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: inline; /* Maintain default inline behavior */
+    margin: 0; /* Remove auto-centering */
+}
+
+/* Styling for Ads */
+.ad-container {
+    border: 1px solid #302f2f; /* Match border color to tables */
+    padding: 15px;
+    margin: 20px 0;
+    background-color: #2b2b2b; /* Slightly darker for consistency */
+    border-radius: 8px;
+    text-align: center; /* Center content */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column; /* Separate text and image vertically */
+    align-items: center; /* Center align items */
+    gap: 10px; /* Add space between elements */
+}
+
+.ad-container img {
+    max-width: 1500px; /* Increase size for better visibility */
+    height: auto;
+    border-radius: 6px; /* Slightly less rounded for better appearance */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    pointer-events: none;
+}
+
+.ad-container p {
+    font-size: 15px; /* Slightly larger for better readability */
+    color: #ccc; /* Slightly lighter than main text */
+    margin: 0; /* Remove extra margins */
+    line-height: 1.5;
+}
+
+.ad-container a {
+    font-size: 13px; /* Slightly larger for better emphasis */
+    color: #9b59b6; /* Distinct color for links */
+    text-decoration: none;
+}
+
+.ad-container a:hover {
+    text-decoration: underline;
+}
+
+.ad-container footer {
+    font-size: 13px;
+    color: #9b59b6;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Media Queries for Small Screens */
+@media (max-width: 768px) {
+    table {
+        font-size: 14px;
+    }
+
+    .ad-container {
+        align-items: flex-start; /* Align items to the left */
+        padding: 10px;
+    }
+
+    .ad-container img {
+        max-width: 100%; /* Allow full width for smaller screens */
+        margin-bottom: 6px; /* Add spacing below the image */
+    }
+
+    .ad-container p {
+        font-size: 14px; /* Maintain readability on smaller screens */
+    }
+
+    .ad-container a {
+        font-size: 14px; /* Adjust link font size for smaller screens */
+    }
+
+
+
+}
+.image-popup {
+    display: none; /* Initially hidden */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Dark semi-transparent background */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.image-popup img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    animation: pop-in 0.3s ease-in-out;
+}
+
+@keyframes pop-in {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+/* Zoom Modal */
+#image-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    overflow: hidden; /* Prevent overflow when zoomed */
+}
+
+#image-modal img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    cursor: zoom-in;
+    transition: transform 0.3s ease, transform-origin 0.3s ease; /* Smooth zoom and origin transitions */
+}
+
+/* Zoomed State */
+#image-modal img.zoomed-in {
+    cursor: zoom-out;
+    transform: scale(2); /* Zoom factor */
 }
