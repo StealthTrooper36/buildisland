@@ -42,7 +42,7 @@ body {
     color: #eae8e8; /* because im a moron and keep forgetting, this is text */
 }
 
-/* New Main and Section Styling */
+/* main section styling */
 main {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -108,7 +108,7 @@ footer {
     width: 100%;
 }
 
-/* Header Styling */
+/* the top navbar's stuff */
 header {
     background-image: url(banner.png);
     background-size: cover;
@@ -132,9 +132,9 @@ header h1 {
 }
 
 .navbar .nav-link {
-    color: white; /* White text for links */
+    color: white;
     font-size: 1rem;
-    font-weight: 500; /* Medium font-weight */
+    font-weight: 500; 
     text-decoration: none; /* Remove underline */
     padding: 10px 15px;
     margin: 0 10px;
@@ -143,8 +143,8 @@ header h1 {
 }
 
 .navbar .nav-link:hover {
-    color: rebeccapurple; /* Blue color on hover */
-    border-bottom: 2px solid rebeccapurple; /* Blue underline on hover */
+    color: rebeccapurple; 
+    border-bottom: 2px solid rebeccapurple;
 }
 
 
@@ -184,7 +184,7 @@ blockquote::after {
     text-align: right;
     margin-top: 1rem;
     font-size: 0.9rem;
-    color: #666;
+    color: #848282;
     font-style: italic;
 }
 
@@ -255,7 +255,7 @@ blockquote::after {
     margin: 0 auto;
 }
 
-/* Styling each article box */
+/* the index.html */
 .article-box {
     background-color: #151515;
     border: 1px solid #262626;
