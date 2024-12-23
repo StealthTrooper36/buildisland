@@ -151,7 +151,7 @@ header {
 }
 
 header h1 {
-    font-weight: 500; /* Medium for header */
+    font-weight: 50; /* Medium for header */
 }
 
 .navbar {
@@ -604,4 +604,9 @@ img {
 
 .articlebuttons:hover {
     color: rgb(135, 76, 193);
+}
+h1 {
+    font-weight: 700;
+    color: white;
+    size: 150px;
 }
