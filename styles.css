@@ -42,20 +42,61 @@ body {
     color: #eae8e8; /* because im a moron and keep forgetting, this is text */
 }
 
+/* New Main and Section Styling */
 main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
     padding: 20px;
-}
-
-p {
-    font-size: large;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 section {
-    background-color: #000;
+    background: #1a1a1a;
+    border-radius: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s;
+    margin: 0;
+    box-shadow: none;
+}
+
+section:hover {
+    transform: translateY(-2px);
+}
+
+section img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin: 0;
+    border-radius: 0;
+}
+
+section h2 {
+    font-size: 1.4rem;
+    margin: 15px 15px 10px;
+    line-height: 1.3;
+    color: #fff;
+}
+
+section p {
+    margin: 5px 15px;
+    font-size: 0.9rem;
+    color: #888;
+    line-height: 1.6;
+}
+
+section p:has(img) {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: auto;
     padding: 15px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-top: 1px solid #333;
 }
 
 footer {
@@ -149,9 +190,9 @@ blockquote::after {
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
-    header {
-        padding: 30px;
-        font-size: 1.5rem;
+    main {
+        grid-template-columns: 1fr;
+        padding: 15px;
     }
 
     .navbar {
@@ -392,51 +433,58 @@ img {
     margin: 0; /* Remove auto-centering */
 }
 
-/* Styling for Ads */
 .ad-container {
-    border: 1px solid #302f2f; /* Match border color to tables */
-    padding: 15px;
-    margin: 20px 0;
-    background-color: #2b2b2b; /* Slightly darker for consistency */
-    border-radius: 8px;
-    text-align: center; /* Center content */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
-    display: flex;
-    flex-direction: column; /* Separate text and image vertically */
-    align-items: center; /* Center align items */
-    gap: 10px; /* Add space between elements */
+    border-radius: 12px;
+    padding: 20px;
+    margin: 25px 0;
+}
+
+.ad-label {
+    background: rebeccapurple;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    margin-bottom: 15px;
+    display: inline-block;
 }
 
 .ad-container img {
-    max-width: 1500px; /* Increase size for better visibility */
-    height: auto;
-    border-radius: 6px; /* Slightly less rounded for better appearance */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-    pointer-events: none;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    margin-bottom: 15px;
+}
+
+.ad-container img:hover {
+    transform: scale(1.02);
 }
 
 .ad-container p {
-    font-size: 15px; /* Slightly larger for better readability */
-    color: #ccc; /* Slightly lighter than main text */
-    margin: 0; /* Remove extra margins */
+    font-size: 1rem;
+    color: #e0e0e0;
+    margin: 12px 0;
     line-height: 1.5;
 }
 
-.ad-container a {
-    font-size: 13px; /* Slightly larger for better emphasis */
-    color: #9b59b6; /* Distinct color for links */
-    text-decoration: none;
+.ad-cta {
+    margin-top: 15px;
+    padding: 10px;
+    background: rgba(155, 89, 182, 0.1);
+    border-radius: 6px;
+    border: 1px solid rgba(155, 89, 182, 0.3);
 }
 
-.ad-container a:hover {
-    text-decoration: underline;
-}
-
-.ad-container footer {
-    font-size: 13px;
+.ad-cta a {
     color: #9b59b6;
+    text-decoration: none;
+    font-size: 0.9rem;
+    display: block;
     text-align: center;
-    margin-top: 10px;
+    transition: color 0.2s;
+}
+
+.ad-cta a:hover {
+    color: #a66bbe;
 }
 
 /* Media Queries for Small Screens */
@@ -527,15 +575,15 @@ img {
     transform: scale(2); /* Zoom factor */
 }
 
+/* Article Buttons */
 .articlebuttons {
+    margin: 15px;
     text-align: center;
-    padding: 14px 25px;
-    color: white;
+    color: rgb(144, 71, 217);
+    text-decoration: none;
     display: inline-block;
-    background-color: rgb(81, 15, 147);
-    border-radius: 10px;
 }
+
 .articlebuttons:hover {
-    color: white;
-    background-color: rgb(135, 76, 193);
+    color: rgb(135, 76, 193);
 }

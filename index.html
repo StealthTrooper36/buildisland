@@ -1,69 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="https://stealthtrooper36.github.io/buildisland/javascript/imagezoom.js"></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Roblox Build Island News's unofficial news source</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <meta property="og:title" content="Build Island News">
-    <meta property="og:description" content="Roblox Build Island's unofficial news source!">
-    <meta property="og:url" content="https://stealthtrooper36.github.io/buildisland/index.html">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://stealthtrooper36.github.io/buildisland/sourceicons/favicon.png">
-    <meta name="theme-color" content="#4B006E">
-    <link rel="icon" type="image/x-vector" href="https://stealthtrooper36.github.io/buildisland/favicon.svg">
-    <meta property="og:site_name" content="Roblox Build Island News - Operated by IBINA">
-    <meta name="google-site-verification" content="96DsMvH7K7Z37HWwZLR-nNRnPbPuGYh90lgjhgrENLQ" />
-    <script src="https://stealthtrooper36.github.io/buildisland/javascript/searchstuff.js"></script>
-    <script>
-        fetch('https://stealthtrooper36.github.io/buildisland/navbar.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('navbar').innerHTML = data;
-            })
-            .catch(error => console.error('Error loading navbar:', error));
-    </script>    
-<div class="image-popup" id="image-popup">
-    <img id="popup-img" src="" alt="Popup Image">
-</div>
+<script src="https://stealthtrooper36.github.io/buildisland/javascript/imagezoom.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Roblox Build Island News's unofficial news source</title>
+<link rel="stylesheet" href="styles.css">
+<meta property="og:title" content="Build Island News">
+<meta property="og:description" content="Roblox Build Island's unofficial news source!">
+<meta property="og:url" content="https://stealthtrooper36.github.io/buildisland/index.html">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://stealthtrooper36.github.io/buildisland/sourceicons/favicon.png">
+<meta name="theme-color" content="#4B006E">
+<link rel="icon" type="image/x-vector" href="https://stealthtrooper36.github.io/buildisland/favicon.svg">
+<meta property="og:site_name" content="Roblox Build Island News - Operated by IBINA">
+<meta name="google-site-verification" content="96DsMvH7K7Z37HWwZLR-nNRnPbPuGYh90lgjhgrENLQ" />
+<script src="https://stealthtrooper36.github.io/buildisland/javascript/searchstuff.js"></script>
+<script>
+fetch('https://stealthtrooper36.github.io/buildisland/navbar.html')
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('navbar').innerHTML = data;
+    })
+    .catch(error => console.error('Error loading navbar:', error));
+</script>
 </head>
 <body>
 <div id="navbar"></div>
-    <main>
-        <section>
-            <h2>Breaking News</h2>
-            <p>Jaxsonpuppupcrazy276 drama explained</p>
-            <p><em>Published on: error</em></p>
-            <p><em>Source: <img src="sourceicons/eunoia.svg" alt="icon" style="width:20px; height:20px; vertical-align:middle;"> Eunoia Studios</em></p>
-            <a href="articles/2024/December/jaxson-drama-explained.html"><div class="articlebuttons">View Article</div></a>
-        </section>
 
+<main>
+    <section>
+        <img src="articles/2024/December/jaxson-drama/thumbnail.png" alt="Jaxson drama thumbnail">
+        <h2>Jaxsonpuppupcrazy276 drama explained</h2>
+        <p>Summary of what Jax did and what that caused.</p>
+        <p><em>Published on: December 23rd, 2024</em></p>
+        <p><img src="sourceicons/eunoia.svg" alt="icon" style="width:20px; height:20px; vertical-align:middle;">{E.S.} Eunoia Studios</p>
+        <a href="articles/2024/December/jaxson-drama-explained.html" class="articlebuttons">View Article →</a>
+    </section>
 
-        <section>
-            <h2>Latest News</h2>
-            <p>Build Island players harass ex-modkit developer, Tekker01 across all of Roblox.</p>
-            <p><em>Published on: Thursday, 14th November 2024</em></p>
-            <p><em>Source: <img src="sourceicons/eunoia.svg" alt="icon" style="width:20px; height:20px; vertical-align:middle;"> Eunoia Studios</em></p>
-            <img src="articles/2024/November/tekker-harassment-group/thumbnail.png" width="854" height="480"> <br>
-            <a href="articles/2024/November/tekker-harassment-group"><div class="articlebuttons">View Article</div></a>
-        </section>
+    <section>
+        <img src="articles/2024/November/tekker-harassment-group/thumbnail.png" alt="Tekker harassment thumbnail">
+        <h2>Latest News</h2>
+        <p>Build Island players harass ex-modkit developer, Tekker01 across all of Roblox.</p>
+        <br>
+        <p><em>Published on: Thursday, 14th November 2024</em></p>
+        <p><img src="sourceicons/eunoia.svg" alt="icon" style="width:20px; height:20px; vertical-align:middle;">{E.S.} Eunoia Studios</p>
+        <a href="articles/2024/November/tekker-harassment-group" class="articlebuttons">View Article →</a>
+    </section>
 
-        <section>
-            <h2>More News</h2>
-            <p>Former Valorian Ally, Krill Army, declares Opal Studio an enemy</p>
-            <p><em>Published on: Saturday, 23rd November 2024</em></p>
-            <p><em>Source: <img src="sourceicons/eunoia.svg" alt="icon" style="width:20px; height:20px; vertical-align:middle;"> Eunoia Studios</em></p>
-            <a href="articles/2024/November/krill-army-declares-opal-enemy.html"><div class="articlebuttons">View Article</div></a>
-        </section>
-    </main>
+    <section>
+        <img src="articles/2024/November/krill-army/thumbnail.png" alt="Krill Army thumbnail">
+        <h2>More News</h2>
+        <p>Former Valorian Ally, Krill Army, declares Opal Studio an enemy</p>
+        <p><em>Published on: Saturday, 23rd November 2024</em></p>
+        <p><img src="sourceicons/eunoia.svg" alt="icon" style="width:20px; height:20px; vertical-align:middle;">{E.S.} Eunoia Studios</p>
+        <a href="articles/2024/November/krill-army-declares-opal-enemy.html" class="articlebuttons">View Article →</a>
+    </section>
+    <section>
+        <img src="articles/2024/November/krill-army/thumbnail.png" alt="Krill Army thumbnail">
+        <h2>Placeholder</h2>
+        <p>Lorem Ipsum</p>
+        <p><em>Published on: Error</em></p>
+        <p><img src="sourceicons/eunoia.svg" alt="icon" style="width:20px; height:20px; vertical-align:middle;">{E.S.} Eunoia Studios</p>
+        <a href="templatepage.html" class="articlebuttons">View Article →</a>
+    </section>
+    <section>
+        <img src="articles/2024/November/krill-army/thumbnail.png" alt="Krill Army thumbnail">
+        <h2>Placeholder</h2>
+        <p>Lorem Ipsum</p>
+        <p><em>Published on: Error</em></p>
+        <p><img src="sourceicons/eunoia.svg" alt="icon" style="width:20px; height:20px; vertical-align:middle;">{E.S.} Eunoia Studios</p>
+        <a href="templatepage.html" class="articlebuttons">View Article →</a>
+    </section>
+    <section>
+        <img src="articles/2024/November/krill-army/thumbnail.png" alt="Krill Army thumbnail">
+        <h2>Placeholder</h2>
+        <p>Lorem Ipsum</p>
+        <p><em>Published on: Error</em></p>
+        <p><img src="sourceicons/eunoia.svg" alt="icon" style="width:20px; height:20px; vertical-align:middle;">{E.S.} Eunoia Studios</p>
+        <a href="templatepage.html" class="articlebuttons">View Article →</a>
+    </section>
+</main>
 
-
-    <footer>
-        <p>Build Island News</p>
-        <p>Operated by {E.S} Eunoia Studios</p>
-    </footer>
+<footer>
+    <p>Build Island News</p>
+    <p>Operated by {E.S} Eunoia Studios</p>
+</footer>
 </body>
 </html>
