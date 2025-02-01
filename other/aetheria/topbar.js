@@ -1,4 +1,9 @@
-function loadHTML(selector, file) {
+  function loadHTML(selector, file) {
+    const el = document.querySelector(selector);
+    if (!el) {
+      console.error("Element not found for selector:", selector);
+      return;
+    }
     fetch(file)
       .then(response => {
         if (!response.ok) {
@@ -7,14 +12,13 @@ function loadHTML(selector, file) {
         return response.text();
       })
       .then(data => {
-        document.querySelector(selector).innerHTML = data;
+        el.innerHTML = data;
       })
-      .catch(error => console.error(error));
+      .catch(error => console.error("Error loading " + file + ": " + error));
   }
   
-  // When the DOM is ready, load header and footer.
+  // When the DOM is fully loaded, load header and footer if the placeholders exist
   document.addEventListener("DOMContentLoaded", () => {
-    loadHTML("header-placeholder", "topbar.html");
-    loadHTML("footer-placeholder", "footer.html");
+    loadHTML("#header-placeholder", "https://buildisland.pages.dev/other/aetheria/topbar.html");
+    loadHTML("#footer-placeholder", "https://buildisland.pages.dev/other/aetheria/footer.html");
   });
-  

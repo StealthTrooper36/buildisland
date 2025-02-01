@@ -176,4 +176,115 @@
       width: 100%;
     }
   }
+/* styles.css */
+
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
   
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    line-height: 1.6;
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #2d2d2d;
+    padding: 20px;
+  }
+  
+  header .container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  nav a {
+    margin: 0 10px;
+    color: #bb86fc;
+    text-decoration: none;
+  }
+  
+  /* Main content styles */
+  main {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+  
+  /* Hero section used on each page */
+  .hero {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #333;
+    border-radius: 8px;
+    margin: 20px;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    color: #bb86fc;
+    margin-bottom: 10px;
+  }
+  
+  /* Styling for the country list on the index page */
+  .country-links ul {
+    list-style: none;
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .country-links li {
+    margin: 10px 0;
+  }
+  
+  .country-links a {
+    color: #bb86fc;
+    font-size: 1.2rem;
+    text-decoration: none;
+  }
+  
+  /* Styling for the country information boxes */
+  .country-info, .history {
+    margin: 20px;
+    padding: 20px;
+    background-color: #2d2d2d;
+    border-radius: 8px;
+  }
+  
+  .country-info img {
+    max-width: 150px;
+    display: block;
+    margin-top: 10px;
+  }
+  
+  /* Footer styles */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2d2d2d;
+    margin-top: 40px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    .hero {
+      padding: 20px;
+    }
+  }
+    
