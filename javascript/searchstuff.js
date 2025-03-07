@@ -1,5 +1,5 @@
 let searchIndex = [];
-fetch('https://stealthtrooper36.github.io/buildisland/search.json')
+fetch('https://buildisland.pages.dev/search.json')
     .then((response) => response.json())
     .then((data) => {
         searchIndex = data; 
