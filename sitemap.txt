@@ -1,7 +1,6 @@
-https://stealthtrooper36.github.io/buildisland/
-https://stealthtrooper36.github.io/buildisland/about.html
-https://stealthtrooper36.github.io/buildisland/index.html
-https://stealthtrooper36.github.io/buildisland/discord
-https://stealthtrooper36.github.io/buildisland/updates
-https://stealthtrooper36.github.io/buildisland/all-articles
+https://buildisland.dev.pages/
+https://buildisland.dev.pages/about.html
+https://buildisland.dev.pages/index.html
+https://buildisland.dev.pages/discord
+https://buildisland.dev.pages/all-articles
 
